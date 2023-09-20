@@ -9,7 +9,6 @@ def add_tax (lst,sls_tx):
     while i < len(updated_list):
         updated_list[i] += (sls_tx * updated_list[i])
         i += 1
-        input(updated_list)
     return updated_list
 '''
 MAIN
@@ -28,7 +27,6 @@ while(number_of_purchases) > 0:
     number_of_purchases -= 1
 #c. use add_tax to apply sales tax to the costs in cost list
 updated_list = add_tax(item_costs, sales_tax)
-print(item_costs, customer_names, updated_list)
 #d. define an empty dictionary with customer : cost
 for i in range(len(customer_names)):
     name = customer_names[i]
@@ -37,14 +35,6 @@ for i in range(len(customer_names)):
         reciept_dict[name] += price
     else:
         reciept_dict[name] = price
-
-
-    """
-power point dictionary example
-"""
 #Outputs
 print(reciept_dict)
 
-""" 
-and printing out the dictionary at the end gives coordinates 0: {Bob : 3.3}
-"""
